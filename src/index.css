@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header{
+  padding:  10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  position: sticky
+}
+
+.hide-scrollbar {
+  overflow: auto;          /* or scroll, if you want */
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;           /* Chrome, Safari, Opera */
+}
+.dish-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.dish-view{
+  display: flex;
+  flex-direction: column;
+  width : 100%;
+  padding: 20px;
+  height: 50vh;
+  overflow-y: auto;
+}
+
+.button{
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color : white;
+  flex-grow: 1;
+}
